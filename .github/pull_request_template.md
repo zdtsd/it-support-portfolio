@@ -5,6 +5,12 @@
 - **What I personally did:** [Concise first-person summary]
 - **How I verified the result:** [Functional test and observed result]
 
+## Practical scope
+
+- [ ] The entry focuses on the decisions that affected the result.
+- [ ] A normal case or lab stays near 300-600 words, or its extra length has a clear purpose.
+- [ ] Evidence is limited to useful, reviewed items. Most entries need no more than two.
+
 ## Review status
 
 - [ ] Instructor or peer review has occurred, or this pull request requests that review.

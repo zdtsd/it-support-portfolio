@@ -1,41 +1,29 @@
 # [Script name]
 
-## Experience type
+> **Target:** Explain safe use, verification, authorship, and limits without reproducing the script line by line.
 
-[Training exercise, personal project, team project, or other accurate label]
+## Purpose and authorship
 
-## Purpose
+- **Experience type:** [Training exercise, personal project, or team project]
+- **Purpose:** [What the script does]
+- **Problem addressed:** [Repeated task or problem]
+- **My contribution:** [What you wrote or materially improved]
 
-[State what the script does in one or two sentences.]
+## Safety and prerequisites
 
-## Problem addressed
+- **May read or change:** [Boundary]
+- **Must never touch:** [Boundary]
+- **Required approval or permissions:** [Requirement]
+- **Runtime and dependencies:** [Requirements]
 
-[Describe the repeatable problem or manual work the script addresses.]
+Keep instructor-only staging scripts and internal remote-support code out of the repository.
 
-## Safety boundary
+## Inputs and outputs
 
-[State what the script may read or change, what it must never touch, required approvals, and data-loss or service-impact risks.]
-
-This portfolio may document scripts you genuinely wrote or materially improved. Don't publish instructor-only fault-staging/reset scripts or internal remote-support implementation as your own work.
-
-## Prerequisites
-
-- [Runtime and supported version]
-- [Operating system]
-- [Required permissions]
-- [Approved dependencies; prefer standard tools where practical]
-
-## Inputs
-
-| Input | Type | Required | Validation or constraints |
-|---|---|---:|---|
-| `[name]` | [Type] | [Yes/No] | [Rule] |
-
-## Outputs
-
-| Output | Destination | Meaning |
+| Item | Type or destination | Validation or meaning |
 |---|---|---|
-| [Output] | [Console/file/etc.] | [How to interpret it] |
+| [Input] | [Type] | [Constraint] |
+| [Output] | [Destination] | [Meaning] |
 
 ## Usage
 
@@ -43,38 +31,24 @@ This portfolio may document scripts you genuinely wrote or materially improved. 
 [sanitized invocation]
 ```
 
-## Example
-
-[Show fictional or documentation-range inputs and a short sanitized result.]
-
-## Testing performed
+## Testing and verification
 
 | Test | Expected result | Observed result |
 |---|---|---|
 | [Normal case] | [Expected] | [Observed] |
-| [Invalid input or safe failure] | [Expected] | [Observed] |
+| [Safe failure] | [Expected] | [Observed] |
 
-## Verification
+[Explain how a user can independently confirm the result.]
 
-[Explain how a user can independently confirm the script produced the intended result without causing unintended changes.]
+## Rollback and limitations
 
-## Rollback
+- **Rollback:** [How to undo changes or state that the script is read-only]
+- **Known limitations:** [Limit]
 
-[State how to undo changes, restore a backup, or explain that the script is read-only.]
+## Example
 
-## Known limitations
+[Use fictional inputs and a short sanitized result.]
 
-- [Limitation]
+## Security and sanitization note
 
-## What I authored personally
-
-[Identify original design, functions, tests, documentation, or improvements you created. Credit any source material or collaborators.]
-
-## Security and sanitization review
-
-- [ ] No credential, token, key, certificate, environment file, or private path is committed.
-- [ ] Examples use fictional data or approved documentation ranges.
-- [ ] Logs and outputs don't reveal people, internal systems, or confidential data.
-- [ ] Destructive or privileged behavior is documented and guarded.
-- [ ] Instructor-only staging/reset and internal remote-support code are excluded.
-- [ ] Third-party code and licenses are credited when applicable.
+[Confirm that examples, logs, paths, dependencies, and code contain no credentials, internal systems, private records, or copied instructor automation.]

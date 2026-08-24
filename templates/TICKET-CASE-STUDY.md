@@ -1,109 +1,54 @@
 # [Sanitized problem and outcome]
 
-## Experience type
+> **Target:** 300 to 600 words, three to six decision rows, and no more than two useful evidence items.
 
-[Supervised support activity, simulation, troubleshooting exercise, or other accurate label]
+## Context
 
-## Date
+- **Experience type:** [Supervised support, simulation, exercise, or another accurate label]
+- **Date:** [YYYY-MM-DD]
+- **My role:** [Your responsibility]
+- **Technical areas:** [Two or three areas]
 
-[YYYY-MM-DD]
+## Problem or goal
 
-## Role
+[In two to four sentences, summarize the user report, scope, environment, and safety or permission boundary. Remove names, ticket numbers, and internal identifiers.]
 
-[Your assigned role and responsibility]
+## Decision record
 
-## Technical areas
-
-- [Area]
-- [Area]
-
-## Tools used
-
-- [Tool and its purpose]
-- [Tool and its purpose]
-
-## User report
-
-[Summarize the report without copying a raw ticket. Remove names, ticket numbers, internal locations, and identifying details.]
-
-## Scope and environment
-
-[State the affected function, device type, impact, relevant training context, availability, and boundaries. Don't include internal identifiers.]
-
-## Initial observations
-
-- **Observed:** [Direct observation or measured result]
-- **Not yet established:** [What the observation didn't prove]
-- **Safety or permission boundary:** [Approval, data, escalation, or change limit]
-
-## Troubleshooting process
-
-| Step | Reason for Checking | Result | Next Decision |
+| Check or action | Why I chose it | What I found | What changed next |
 |---|---|---|---|
-| [Check or test] | [Which theories this separates and why it is safe] | [Exact sanitized observation] | [How the result changed the next step] |
-| [Check or test] | [Reason] | [Result] | [Decision] |
+| [Step] | [Reason] | [Sanitized result] | [Next decision] |
+| [Step] | [Reason] | [Result] | [Decision] |
 
-## Root cause
+## Result and verification
 
-[State the established cause and supporting evidence. If the cause wasn't proven, label it as probable or unresolved.]
+- **Cause or conclusion:** [Supported cause, probable cause, or unresolved result]
+- **Correction or final action:** [Approved correction, workaround, or escalation]
+- **Verification:** [Original function tested and observed result]
+- **Closing communication:** [What the user or reviewer was told]
+- **Remaining limitation:** [None or a concise limitation]
 
-## Resolution
+## My contribution
 
-[Describe the approved corrective action. Distinguish a permanent fix from a workaround.]
+[Use two or three sentences to identify your investigation, decisions, changes, testing, and communication. Credit instructor or team work separately.]
 
-## Verification
+## What I learned
 
-- **Original function tested:** [How]
-- **Observed result:** [What happened]
-- **Related function checked:** [What was checked to avoid a partial fix]
-- **User or approved-proxy confirmation:** [Confirmed, pending, unavailable, or not applicable]
+- **First theory:** [What you initially suspected]
+- **Changed direction:** [Which evidence affected your reasoning]
+- **Next time:** [What you would check or explain sooner]
 
-## Customer-facing closing note
+## Interview answer
 
-> [Write a concise update that states what was found, what was corrected, how it was verified, and what the user should do next. Don't blame the user or expose internal-only details.]
-
-## Commands and tools used
-
-| Command or tool | Purpose | Relevant result |
-|---|---|---|
-| `[sanitized command]` | [Why it was used] | [What the output established] |
-
-Don't include passwords, tokens, internal addresses, real hostnames, or command history that reveals private infrastructure.
-
-## What I did personally
-
-[Use first-person statements to identify your investigation, decisions, changes, testing, communication, and documentation.]
-
-## Collaboration or escalation
-
-[Identify help requested, evidence handed off, feedback received, and your contribution after escalation. Write “None” only when accurate.]
-
-## Reflection
-
-- **What did I initially suspect?** [Answer]
-- **What evidence changed my direction?** [Answer]
-- **What would I check sooner next time?** [Answer]
-- **What did I learn?** [Answer]
-- **What technical wording would I improve?** [Answer]
-
-## Interview-ready answer
-
-[Write a 20-45 second spoken answer. Cover the situation, your responsibility, the most important actions and reasoning, the verified result, and the lesson or significance. Be honest about supervision, simulation, and teamwork.]
+[Write three to five sentences that take about 20 to 30 seconds to say. Cover context, responsibility, important reasoning, verified result, and lesson.]
 
 ## Evidence
 
-- [Link to a sanitized screenshot, diagram, command excerpt, test record, or document]
-- [Explain what each item proves]
-- [State when no publishable evidence is available]
+- [Optional sanitized item and what it proves]
+- [Optional second item]
 
-Never add a raw ticket export or an unreviewed screenshot.
+Write `No publishable evidence added` when the written decision record is sufficient.
 
-## Sanitization confirmation
+## Sanitization note
 
-- [ ] No real requester, participant, or unrelated person is named, except me when appropriate.
-- [ ] No email address, phone number, internal link, or raw ticket number is present.
-- [ ] No internal IP address, hostname, domain, asset tag, or serial number is present.
-- [ ] No credential, token, key, certificate, reset value, or secret is present.
-- [ ] Screenshots were cropped and reviewed for unrelated tabs, files, notifications, and personal information.
-- [ ] Instructor-only staging, reset, and remote-support implementation details are excluded.
-- [ ] The experience type, my contribution, and verification status are described honestly.
+[Confirm that the entry contains no private records, internal identifiers, credentials, or instructor-only setup details.]

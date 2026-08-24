@@ -1,22 +1,15 @@
 # [Knowledge-base article title]
 
-## Intended audience
+> **Target:** The shortest procedure that another technician can follow safely and verify.
 
-[Who should use this article and what level of access or skill they need]
+## Intended audience and use case
 
-## Symptoms or use case
+[State who should use this article, the symptom or task it covers, and when it doesn't apply.]
 
-- [Observable symptom or approved task]
-- [When this article applies]
-- [When this article doesn't apply]
+## Safety and prerequisites
 
-## Prerequisites
-
-- [Required equipment, software, access, backup, or known-good information]
-
-## Safety or permission requirements
-
-[State administrative rights, change approval, data-loss risk, service impact, electrostatic-discharge controls, or policy boundaries.]
+- [Required access, approval, backup, equipment, or known-good information]
+- [Safety or service-impact boundary]
 
 ## Procedure
 
@@ -27,28 +20,19 @@
    - **Why:** [Reason]
    - **Expected result:** [Observation]
 
-Use placeholders and documentation ranges. Never include a live credential, internal address, asset identifier, or organization-specific secret.
-
 ## Verification
 
-[Explain how to confirm the required function, related functions, and user outcome.]
+[Explain how to confirm the required function and any important related function.]
 
-## Rollback or recovery
+## Recovery and escalation
 
-[Explain how to return to the previous safe state or recover when the procedure fails.]
+- **Recovery:** [How to return to the previous safe state]
+- **Escalate when:** [Condition and evidence to provide]
 
-## When to escalate
+## Source and testing note
 
-- [Condition requiring higher permission, deeper expertise, vendor support, or incident response]
-- [Evidence to collect before escalation]
+[State how the procedure was tested and link to approved public or sanitized related documentation.]
 
-## Related documentation
+## Sanitization note
 
-- [Link to an approved public source or another sanitized article]
-
-## Sanitization confirmation
-
-- [ ] The procedure contains no real names, internal identifiers, addresses, credentials, or confidential organization information.
-- [ ] Screenshots and examples were reviewed and sanitized.
-- [ ] Instructor-only staging/reset methods and internal remote-support details are excluded.
-- [ ] Safety, permissions, rollback, verification, and escalation are explicit.
+[Confirm that examples contain no real names, internal identifiers, credentials, or instructor-only methods.]

@@ -1,105 +1,53 @@
-# Managed switch source-MAC learning and port movement
+# Verify Layer 2 Source-MAC Learning After a Port Move
 
-> **Starter example - not participant work.** This fictionalized supervised lab demonstrates the expected technical explanation. It includes no management address, credential, production configuration, or instructor-only setup method.
+> **Illustrative demo:** This supervised lab contains no management address, credential, production configuration, or instructor setup method.
 
-## Experience type
+## Context
 
-Sanitized supervised switching lab example
+- **Experience type:** Supervised managed-switch lab
+- **Date:** Illustrative demo date
+- **Objective:** Observe how a switch learns and updates a source-MAC location
+- **My role:** Apply the approved basic lab configuration, record observations, and explain the result
+- **Equipment or topology:** One managed lab switch and one workstation connected to approved access ports
 
-## Date
+## Problem or goal
 
-Not applicable - starter example
+The lab needed to demonstrate dynamic source-MAC learning. Running a table command once would show only one moment, so the procedure included a controlled cable move and a second observation.
 
-## Objective
+## Decision record
 
-Apply a basic approved access-port configuration, observe a workstation source MAC address learned on one switch port, move the workstation cable, and verify that the switch relearns the same source MAC address on the new port.
+| Check or action | Why I chose it | What I found | What changed next |
+|---|---|---|---|
+| Record the empty starting state for the two access ports | Establish a baseline | The workstation MAC wasn't present on either port | Connect the workstation and generate traffic |
+| View the table after traffic on the first port | Confirm initial source learning | The workstation MAC appeared dynamically on the first port | Move the same workstation cable |
+| Connect to the second port and generate new traffic | Give the switch a frame with the same source MAC on a new ingress port | Link came up and traffic crossed the second port | View the table again |
+| Compare the second table state with the baseline | Verify whether the learned location changed | The same MAC appeared on the second port and no longer used the first as its active location | Document what the movement proved |
 
-## Skills demonstrated
+## Result and verification
 
-- Managed-switch CLI navigation
-- Access-port configuration within an approved lab scope
-- MAC address table interpretation
-- Controlled cabling change and verification
-- Layer 2 technical explanation
+- **Observed result:** The switch learned the workstation source MAC on the first port, then updated the location after traffic arrived on the second port.
+- **Verification:** The same recorded MAC appeared dynamically on the expected port after each traffic test.
+- **What it proves:** A switch learns a frame's source MAC on the ingress port and can update that learned state when the source moves.
+- **Remaining limitation:** The lab didn't test aging timers, security features, trunks, or production behavior.
 
-## Equipment, software, or topology
+## My contribution
 
-- One managed lab switch
-- One workstation with the locally administered example MAC address `02:00:00:00:00:21`
-- Two approved access ports in the same lab VLAN
-- Console or approved management session
-- One Ethernet patch cable
+In this demo response, the participant documented the baseline, applied the approved lab configuration, recorded the example MAC, moved the cable, generated traffic, compared table states, and wrote the Layer 2 explanation.
 
-No production device or addressing information is represented.
+## What I learned
 
-## Starting condition
+- **Initial expectation:** I expected link-up alone to create the table entry.
+- **Changed direction:** The lab required actual frame traffic before the switch had a source to learn.
+- **Next time:** I would include traffic generation as an explicit step after every physical move.
 
-The two selected interfaces were approved for the lab and placed in the same access VLAN. The dynamic MAC address table didn't contain the example workstation MAC before the workstation generated traffic. Existing unrelated switch configuration was outside scope and wasn't copied into the report.
+## Interview answer
 
-## Procedure
-
-1. Recorded the selected interfaces' starting operational state and access VLAN.
-2. Applied the approved lab descriptions and access-port settings without changing unrelated interfaces.
-3. Connected the workstation to the first access port and waited for link state to become active.
-4. Generated ordinary workstation traffic so the switch would receive a frame sourced from the workstation MAC.
-5. Queried the dynamic MAC address table and recorded the learned interface.
-6. Moved the same cable and workstation to the second approved access port.
-7. Waited for link state, generated traffic again, and queried the same MAC entry.
-8. Confirmed that the MAC entry now referenced the second port and no longer referenced the first.
-
-## Expected result
-
-After receiving a frame, the switch should associate the frame's source MAC address with the ingress port. When the same source begins transmitting through another port in the same switching context, the switch should update the dynamic entry to the new ingress port.
-
-## Observed result
-
-The example workstation MAC appeared dynamically on the first access port after traffic was generated. After the cable move and new traffic, the same MAC appeared on the second access port. The table no longer showed the first port as the active location for that MAC.
-
-## Verification
-
-- Confirmed link state on each connected port.
-- Filtered the dynamic MAC table for the same sanitized example MAC before and after the move.
-- Confirmed the access VLAN remained unchanged.
-- Generated traffic after each connection so the switch had a source frame to learn.
-- Repeated the final lookup to confirm the entry remained associated with the second port.
-
-## Technical explanation
-
-An Ethernet switch learns from the **source** MAC address of frames arriving on each port. It stores a dynamic mapping between that MAC address and the ingress port, then uses destination MAC lookups to make forwarding decisions.
-
-The port movement showed that the table contains learned state that can change. When the switch received a new frame with the same source MAC on the second port, it updated the mapping. Running the table command shows the current entries. The controlled move and second observation demonstrated Layer 2 source-MAC learning and relearning.
-
-## Problems encountered
-
-The MAC entry didn't appear immediately after the first cable connection because link state alone doesn't create a source-MAC entry. The workstation needed to transmit a frame before the switch had a source address to learn.
-
-## Changes or corrections
-
-The procedure was corrected to include deliberate traffic generation after each cable connection and to verify link state before querying the table. This made the observation repeatable.
-
-## What I did personally
-
-In this example, the participant documented the baseline, applied the approved access-port settings, connected and moved the cable, generated test traffic, filtered and interpreted the MAC table, verified the VLAN and interface states, and wrote the technical explanation.
+In a supervised switch lab, I recorded a workstation MAC and observed it learned dynamically on one access port. I moved the cable, generated traffic, and verified the same MAC moved to the new port in the table. That result demonstrated source-MAC learning from the ingress frame. It also showed why a command output needs a controlled change and comparison to become useful evidence.
 
 ## Evidence
 
-See the [evidence guidance](evidence/README.md). The starter doesn't include fabricated terminal screenshots or a copied full switch configuration.
+- [Evidence guide](evidence/README.md), which explains safe table excerpts and topology diagrams
 
-## Reflection
+## Sanitization note
 
-- **Most important result:** The same source MAC moved from the first interface to the second after new traffic.
-- **What it proved:** The switch learns a dynamic association from the ingress location of source frames and can update it when that location changes.
-- **What I would change next time:** Include traffic generation as a planned step immediately after link-up.
-- **Concept I can explain:** The difference between physical link state, source-MAC learning, and destination-based forwarding.
-
-## Interview-ready answer
-
-In a supervised managed-switch lab, I configured two approved access ports in the same VLAN and recorded the starting MAC table. I connected a workstation, generated traffic, and verified its source MAC was learned on the first port. I then moved the cable, generated traffic again, and confirmed the switch updated the same MAC to the second port. That demonstrated that Layer 2 switches learn dynamic source-MAC-to-port mappings and relearn them when the source location changes.
-
-## Sanitization confirmation
-
-- [x] Device labels, topology, addresses, and evidence are sanitized.
-- [x] No management address, credential, key, certificate, asset identifier, or private infrastructure detail is present.
-- [x] No instructor-only deployment, fault-staging, or reset method is included.
-- [x] The entry is labeled as a supervised demo and makes no participant-experience claim.
-- [x] No fabricated evidence is included.
+This entry contains no management address, credential, real hardware address, production configuration, or condition-staging instruction.

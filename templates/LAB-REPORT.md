@@ -1,89 +1,52 @@
 # [Lab title]
 
-## Experience type
+> **Target:** 300 to 600 words, three to six decision rows, and no more than two useful evidence items.
 
-[Supervised lab, simulation, exercise, or other accurate label]
+## Context
 
-## Date
+- **Experience type:** [Supervised lab, simulation, or exercise]
+- **Date:** [YYYY-MM-DD]
+- **Objective:** [Technical question or function tested]
+- **My role:** [Your responsibility]
+- **Equipment or topology:** [Generic summary]
 
-[YYYY-MM-DD]
+## Problem or goal
 
-## Objective
+[Describe the starting condition, expected outcome, and relevant safety or permission boundary in two to four sentences.]
 
-[State the technical question, behavior, or skill the lab was designed to demonstrate.]
+## Decision record
 
-## Skills demonstrated
+| Check or action | Why I chose it | What I found | What changed next |
+|---|---|---|---|
+| [Step] | [Reason] | [Observed result] | [Next decision] |
+| [Step] | [Reason] | [Result] | [Decision] |
 
-- [Skill]
-- [Skill]
+## Result and verification
 
-## Equipment, software, or topology
+- **Observed result:** [What happened]
+- **Verification:** [Repeat test, comparison, or measured state]
+- **What it proves:** [Technical explanation of the result]
+- **Remaining limitation:** [What the lab didn't test]
 
-[Describe device types, software, connections, and logical topology using sanitized labels and documentation address ranges when needed.]
+## My contribution
 
-## Starting condition
+[Use two or three sentences to identify your configuration, testing, observation, analysis, and documentation. Credit team work separately.]
 
-[Record relevant initial configuration, state, or baseline evidence.]
+## What I learned
 
-## Procedure
+- **Initial expectation:** [What you expected]
+- **Changed direction:** [Unexpected result or correction]
+- **Next time:** [What you would prepare or check sooner]
 
-1. [Approved action and why it was needed]
-2. [Observation or configuration step]
-3. [Controlled change]
-4. [Verification step]
+## Interview answer
 
-## Expected result
-
-[State what should happen and why.]
-
-## Observed result
-
-[State what actually happened, including deviations from the expected result.]
-
-## Verification
-
-[Describe the repeatable check, comparison, test traffic, command output, or functional test used to confirm the result.]
-
-## Technical explanation
-
-[Explain what the result proves. Connect the observation to the underlying technical concept. A successful command alone doesn't explain the technical result.]
-
-For example, in a switching lab, explain how a learned source MAC address and its movement between ports demonstrate Layer 2 learning and forwarding behavior.
-
-## Problems encountered
-
-[Describe errors, unexpected behavior, or ambiguity. Write “None observed” only when accurate.]
-
-## Changes or corrections
-
-[Explain how the plan, configuration, or documentation changed in response to evidence.]
-
-## What I did personally
-
-[Separate your cabling, configuration, observation, testing, analysis, and documentation from team or instructor work.]
+[Write three to five sentences covering the objective, your role, meaningful action, verified result, and technical significance.]
 
 ## Evidence
 
-- [Sanitized diagram, selected output, configuration excerpt, photo, or test record]
-- [What the evidence proves]
+- [Optional sanitized diagram, excerpt, result, or photo and what it proves]
+- [Optional second item]
 
-Don't fabricate screenshots or publish credentials, management addresses, full production configurations, or instructor-only staging instructions.
+## Sanitization note
 
-## Reflection
-
-- What result was most important?
-- What did that result prove?
-- What would I change if I repeated the lab?
-- What concept can I now explain without relying on memorized steps?
-
-## Interview-ready answer
-
-[Write a 20-45 second answer covering the objective, your role, meaningful action, observed and verified result, and technical significance.]
-
-## Sanitization confirmation
-
-- [ ] Device labels, topology, addresses, and evidence are sanitized.
-- [ ] No credentials, keys, certificates, asset identifiers, or private infrastructure details are present.
-- [ ] No instructor-only deployment, fault-staging, or reset method is included.
-- [ ] My personal contribution and the supervised training context are accurate.
-- [ ] Every evidence item was reviewed before commit.
+[Confirm that systems, addresses, credentials, and evidence are safe and that instructor setup details are excluded.]

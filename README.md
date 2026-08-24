@@ -13,6 +13,19 @@ The repository has two jobs:
 
 The completed entries below are illustrative. They show the expected detail, reasoning, verification, and privacy standard. Replace them with your own reviewed work as your portfolio develops.
 
+## Practical entry standard
+
+A normal full entry should take about 15 to 25 minutes to write. Aim for:
+
+- 300 to 600 words;
+- three to six decision rows;
+- a clear result and verification;
+- three short learning prompts;
+- a 20 to 30 second interview answer; and
+- zero to two evidence items.
+
+Five strong featured entries are enough for a finished portfolio. Add more only when they demonstrate a genuinely different skill or experience. Routine activities belong in the worklog.
+
 ## What it can do for you
 
 Before an interview, you can use the [Interview Evidence Index](INTERVIEW-INDEX.md) to find a relevant example quickly. Each full entry helps you recall:
@@ -35,7 +48,7 @@ I am an emerging IT support professional developing practical skills in troubles
 
 ## Featured demo evidence
 
-These eight entries form a populated example portfolio. They don't claim participant experience. A personalized portfolio should eventually feature five to eight of its strongest reviewed entries.
+These eight entries provide a broad instructor demo. They don't claim participant experience. A personalized portfolio can finish with five strong reviewed entries.
 
 | Featured entry | Experience type | Technical areas | One-sentence proof |
 |---|---|---|---|
@@ -164,8 +177,8 @@ The tracked `.gitignore` excludes `local-project-inbox/` at any depth. Files in 
 ## The three documentation levels
 
 1. **Worklog:** Every completed activity receives a brief row in [WORKLOG.md](WORKLOG.md). This is your complete activity memory.
-2. **Full entry:** Meaningful work becomes a case study, lab report, project summary, knowledge-base article, or script README. During active training, a normal target is about one full entry per week.
-3. **Featured evidence:** Five to eight reviewed entries appear here and in [INTERVIEW-INDEX.md](INTERVIEW-INDEX.md). Together, they should show a useful range of support skills.
+2. **Full entry:** Meaningful work becomes a compact case study, lab report, project summary, knowledge-base article, or script README. One every two or three weeks is usually enough during active training.
+3. **Featured evidence:** Five reviewed entries appear here and in [INTERVIEW-INDEX.md](INTERVIEW-INDEX.md). Add more only when they improve the technical range.
 
 ## Before publishing anything
 

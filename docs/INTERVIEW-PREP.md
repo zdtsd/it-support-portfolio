@@ -12,7 +12,7 @@ Use the portfolio as a memory and evidence system. Select the closest honest exa
 6. **Mention collaboration accurately.** Explain what you escalated, what evidence you handed off, and what you did after receiving guidance.
 7. **End with the lesson.** State what the experience changed about your future troubleshooting.
 
-Aim for approximately 20-45 seconds initially. Let the interviewer ask for deeper technical details.
+Aim for approximately 20-30 seconds initially. Let the interviewer ask for deeper technical details.
 
 ## A practical answer structure
 

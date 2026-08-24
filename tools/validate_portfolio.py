@@ -62,100 +62,37 @@ CORE_FILES = (
     ".gitignore",
 )
 
-CASE_REQUIRED_HEADINGS = (
-    "experience type",
-    "date",
-    "role",
-    "technical areas",
-    "tools used",
-    "user report",
-    "scope and environment",
-    "initial observations",
-    "troubleshooting process",
-    "root cause",
-    "resolution",
-    "verification",
-    "customer-facing closing note",
-    "commands and tools used",
-    "what i did personally",
-    "collaboration or escalation",
-    "reflection",
-    "interview-ready answer",
+PRACTICAL_ENTRY_REQUIRED_HEADINGS = (
+    "context",
+    "problem or goal",
+    "decision record",
+    "result and verification",
+    "my contribution",
+    "what i learned",
+    "interview answer",
     "evidence",
-    "sanitization confirmation",
-)
-
-LAB_REQUIRED_HEADINGS = (
-    "experience type",
-    "date",
-    "objective",
-    "skills demonstrated",
-    "equipment, software, or topology",
-    "starting condition",
-    "procedure",
-    "expected result",
-    "observed result",
-    "verification",
-    "technical explanation",
-    "problems encountered",
-    "changes or corrections",
-    "what i did personally",
-    "evidence",
-    "reflection",
-    "interview-ready answer",
-    "sanitization confirmation",
-)
-
-PROJECT_REQUIRED_HEADINGS = (
-    "experience type",
-    "date",
-    "goal",
-    "business or training need",
-    "scope",
-    "participant's role",
-    "plan",
-    "implementation",
-    "major decisions",
-    "challenges",
-    "deliverables",
-    "testing and verification",
-    "final result",
-    "what i did personally",
-    "collaboration",
-    "lessons learned",
-    "interview-ready answer",
-    "evidence",
-    "sanitization confirmation",
+    "sanitization note",
 )
 
 KNOWLEDGE_BASE_REQUIRED_HEADINGS = (
-    "intended audience",
-    "symptoms or use case",
-    "prerequisites",
-    "safety or permission requirements",
+    "intended audience and use case",
+    "safety and prerequisites",
     "procedure",
     "verification",
-    "rollback or recovery",
-    "when to escalate",
-    "related documentation",
-    "sanitization confirmation",
+    "recovery and escalation",
+    "source and testing note",
+    "sanitization note",
 )
 
 SCRIPT_REQUIRED_HEADINGS = (
-    "purpose",
-    "problem addressed",
-    "safety boundary",
-    "prerequisites",
-    "inputs",
-    "outputs",
+    "purpose and authorship",
+    "safety and prerequisites",
+    "inputs and outputs",
     "usage",
     "example",
-    "testing performed",
-    "verification",
-    "rollback",
-    "known limitations",
-    "what i authored personally",
-    "security and sanitization review",
+    "testing and verification",
+    "rollback and limitations",
+    "security and sanitization note",
 )
 
 TEXT_SUFFIXES = {".md", ".txt", ".rst", ".csv"}
@@ -532,86 +469,57 @@ def check_markdown_links(path: Path, root: Path) -> list[Finding]:
     return findings
 
 
-def is_full_case_study(path: Path, root: Path) -> bool:
-    relative_path = path.relative_to(root)
-    relative = relative_path.as_posix()
-    if len(relative_path.parts) == 3 and relative_path.parts[0] == "cases" and path.name == "README.md":
-        return True
-    return relative in {
-        "examples/network-printer-port/README.md",
-        "examples/browser-connectivity/README.md",
-    }
-
-
-def is_full_lab_report(path: Path, root: Path) -> bool:
-    relative_path = path.relative_to(root)
-    relative = relative_path.as_posix()
-    if len(relative_path.parts) == 3 and relative_path.parts[0] == "labs" and path.name == "README.md":
-        return True
-    return relative == "examples/switch-mac-learning/README.md"
-
-
-def is_full_entry_in(path: Path, root: Path, category: str) -> bool:
-    relative = path.relative_to(root)
-    return (
-        len(relative.parts) == 3
-        and relative.parts[0] == category
-        and relative.parts[2] == "README.md"
-    )
-
-
 def normalized_heading(title: str) -> str:
     without_code = title.replace("`", "")
     return re.sub(r"\s+", " ", without_code).strip().casefold()
 
 
-def check_case_headings(path: Path, root: Path) -> list[Finding]:
-    text = path.read_text(encoding="utf-8")
-    headings = {
-        normalized_heading(match.group("title"))
-        for line in text.splitlines()
-        if (match := HEADING.match(line))
+def entry_heading_rule(
+    path: Path, root: Path
+) -> tuple[tuple[str, ...], str, str] | None:
+    relative_path = path.relative_to(root)
+    relative = relative_path.as_posix()
+
+    practical_paths = {
+        "templates/TICKET-CASE-STUDY.md",
+        "templates/LAB-REPORT.md",
+        "templates/PROJECT-SUMMARY.md",
+        "examples/network-printer-port/README.md",
+        "examples/browser-connectivity/README.md",
+        "examples/switch-mac-learning/README.md",
     }
-    missing = [heading for heading in CASE_REQUIRED_HEADINGS if heading not in headings]
-    if not missing:
+    if relative in practical_paths:
+        return PRACTICAL_ENTRY_REQUIRED_HEADINGS, "PRACTICAL_HEADINGS", "practical entry"
+
+    if (
+        len(relative_path.parts) == 3
+        and relative_path.parts[0] in {"cases", "labs", "projects"}
+        and relative_path.parts[2] == "README.md"
+    ):
+        return PRACTICAL_ENTRY_REQUIRED_HEADINGS, "PRACTICAL_HEADINGS", "practical entry"
+
+    if relative == "templates/KNOWLEDGE-BASE-ARTICLE.md" or (
+        len(relative_path.parts) == 3
+        and relative_path.parts[0] == "knowledge-base"
+        and relative_path.parts[2] == "README.md"
+    ):
+        return KNOWLEDGE_BASE_REQUIRED_HEADINGS, "KB_HEADINGS", "knowledge-base article"
+
+    if relative == "templates/SCRIPT-README.md" or (
+        len(relative_path.parts) == 3
+        and relative_path.parts[0] == "scripts"
+        and relative_path.parts[2] == "README.md"
+    ):
+        return SCRIPT_REQUIRED_HEADINGS, "SCRIPT_HEADINGS", "script documentation"
+
+    return None
+
+
+def check_required_headings(path: Path, root: Path) -> list[Finding]:
+    rule = entry_heading_rule(path, root)
+    if not rule:
         return []
-    return [
-        Finding(
-            relative_name(path, root),
-            1,
-            "CASE_HEADINGS",
-            "Full case study is missing required heading(s): " + ", ".join(missing) + ".",
-        )
-    ]
-
-
-def check_lab_headings(path: Path, root: Path) -> list[Finding]:
-    text = path.read_text(encoding="utf-8")
-    headings = {
-        normalized_heading(match.group("title"))
-        for line in text.splitlines()
-        if (match := HEADING.match(line))
-    }
-    missing = [heading for heading in LAB_REQUIRED_HEADINGS if heading not in headings]
-    if not missing:
-        return []
-    return [
-        Finding(
-            relative_name(path, root),
-            1,
-            "LAB_HEADINGS",
-            "Full lab report is missing required heading(s): " + ", ".join(missing) + ".",
-        )
-    ]
-
-
-def check_required_headings(
-    path: Path,
-    root: Path,
-    required: tuple[str, ...],
-    code: str,
-    entry_label: str,
-) -> list[Finding]:
+    required, code, entry_label = rule
     text = path.read_text(encoding="utf-8")
     headings = {
         normalized_heading(match.group("title"))
@@ -639,40 +547,7 @@ def validate(root: Path) -> list[Finding]:
             findings.extend(scan_text_file(path, root))
         if path.suffix.lower() == ".md":
             findings.extend(check_markdown_links(path, root))
-            if is_full_case_study(path, root):
-                findings.extend(check_case_headings(path, root))
-            if is_full_lab_report(path, root):
-                findings.extend(check_lab_headings(path, root))
-            if is_full_entry_in(path, root, "projects"):
-                findings.extend(
-                    check_required_headings(
-                        path,
-                        root,
-                        PROJECT_REQUIRED_HEADINGS,
-                        "PROJECT_HEADINGS",
-                        "project summary",
-                    )
-                )
-            if is_full_entry_in(path, root, "knowledge-base"):
-                findings.extend(
-                    check_required_headings(
-                        path,
-                        root,
-                        KNOWLEDGE_BASE_REQUIRED_HEADINGS,
-                        "KB_HEADINGS",
-                        "knowledge-base article",
-                    )
-                )
-            if is_full_entry_in(path, root, "scripts"):
-                findings.extend(
-                    check_required_headings(
-                        path,
-                        root,
-                        SCRIPT_REQUIRED_HEADINGS,
-                        "SCRIPT_HEADINGS",
-                        "script documentation",
-                    )
-                )
+            findings.extend(check_required_headings(path, root))
     return sorted(set(findings))
 
 
