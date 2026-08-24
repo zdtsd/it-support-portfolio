@@ -1,0 +1,83 @@
+# Environment and local configuration
+.env
+.env.*
+!.env.example
+*.env
+
+# Local agent instructions must never be published from this repository
+[Aa][Gg][Ee][Nn][Tt][Ss].[Mm][Dd]
+**/[Aa][Gg][Ee][Nn][Tt][Ss].[Mm][Dd]
+
+# Local project intake for evidence conversion; contents are never uploaded
+local-project-inbox/
+**/local-project-inbox/
+
+# Keys, certificates, credentials, and tokens
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+*.crt
+*.cer
+*.der
+id_rsa*
+id_dsa*
+id_ecdsa*
+id_ed25519*
+*credential*
+*password*
+*secret*
+*token*
+
+# Raw exports and local-only evidence staging
+raw-evidence/
+**/raw-evidence/
+unreviewed-evidence/
+**/unreviewed-evidence/
+raw-exports/
+**/raw-exports/
+*raw-ticket*
+*ticket-export*
+*osticket-export*
+*.sql
+*.sqlite
+*.db
+
+# Archives may contain unreviewed exports or evidence
+*.zip
+*.7z
+*.rar
+*.tar
+*.tgz
+*.gz
+*.bz2
+*.xz
+
+# Python artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# Editor and operating-system artifacts
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Temporary and backup files
+*.tmp
+*.temp
+*.bak
+*.log
+
+# Sanitized evidence images are intentionally not ignored.
