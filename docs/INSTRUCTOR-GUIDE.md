@@ -4,13 +4,13 @@
 
 This repository is the instructor-owned canonical starter for participant IT support portfolios. It is designed to turn supervised tickets, labs, exercises, projects, knowledge-base work, and scripts into evidence participants can retrieve and explain during interviews.
 
-The system deliberately separates:
+The system uses three documentation levels:
 
 - **worklog memory**, which records every completed activity briefly;
 - **full entries**, which explain meaningful work; and
-- **featured evidence**, which presents approximately five to eight strong reviewed examples.
+- **featured evidence**, which presents five strong reviewed examples. Add more only when they show a genuinely different area.
 
-This prevents the portfolio from becoming either an empty showcase or an unfiltered archive of classwork.
+The worklog captures breadth, full entries explain meaningful activities, and featured evidence stays quick to review.
 
 ## Recommended rollout: one repository per participant
 
@@ -50,11 +50,11 @@ For those reasons, use the shared approach only as a temporary private pilot. Se
 
 No participant should be required to publish personal work publicly as a condition of learning the workflow.
 
-## Suggested weekly cadence
+## Suggested cadence
 
 - Every completed activity receives a brief worklog row.
-- One meaningful activity becomes a full entry.
-- One entry receives instructor or peer review.
+- Every two or three weeks, one meaningful activity becomes a compact full entry.
+- The selected entry receives instructor or peer review.
 - Technical or privacy corrections are made in a follow-up commit.
 - The interview index is updated periodically after enough strong work has accumulated.
 
@@ -112,7 +112,7 @@ A reasonable completion target is:
 
 - an accurate introduction and training disclosure;
 - a current worklog;
-- five to eight featured, reviewed full entries;
+- five featured, reviewed full entries, with additional entries only when they improve the technical range;
 - an interview index that covers common support questions;
 - a skills matrix supported by links;
 - at least one example of troubleshooting reasoning and changed direction;
@@ -125,7 +125,9 @@ Adjust the technical mix to the participant's actual opportunities. Don't requir
 ## Avoid excessive documentation work
 
 - Use the worklog for routine tasks.
-- Target about one full entry per active training week, not one per ticket.
+- Target one full entry every two or three active training weeks.
+- Set a normal drafting limit of 15 to 25 minutes.
+- Use 300 to 600 words and three to six decision rows as the normal range.
 - Permit short evidence excerpts. Full logs often contain unrelated or private details.
 - Review one technical and one communication improvement at a time when a draft is developing.
 - Let one strong entry support several interview questions.

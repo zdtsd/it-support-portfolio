@@ -28,7 +28,15 @@ Copy the template into the matching folder. Use a short descriptive folder name 
 
 ## 5. Write the first full entry
 
-Explain the situation, what you personally did, why you chose each major step, the result, and how you verified it. Leave unsupported sections incomplete and mark unknown or unverified items honestly.
+Keep the first draft practical:
+
+- 300 to 600 words;
+- three to six decision rows;
+- one result and verification section;
+- three learning prompts; and
+- zero to two evidence items.
+
+Explain the situation, your contribution, why you chose each major step, the result, and how you verified it. Leave unsupported items clearly marked. A normal draft should take about 15 to 25 minutes.
 
 ## 6. Add only sanitized evidence
 
@@ -97,7 +105,7 @@ A follow-up commit makes the learning and correction visible.
 
 ## 12. Add strong work to the interview index
 
-After an entry passes review, link it from [INTERVIEW-INDEX.md](INTERVIEW-INDEX.md) when it provides strong evidence for an interview question. Only your best five to eight entries need to be featured on the main README.
+After an entry passes review, link it from [INTERVIEW-INDEX.md](INTERVIEW-INDEX.md) when it provides strong evidence for an interview question. Five strong entries are enough for the main README.
 
 ## Your first finish line
 

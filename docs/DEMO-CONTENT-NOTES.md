@@ -22,6 +22,8 @@ The repository rewrites those topics as original portfolio examples. It doesn't 
 
 The sample dates, observations, roles, and outcomes are illustrative. They show the form of a strong training entry and don't establish that a participant completed the activity. Every demo entry carries an experience label and a sanitization statement.
 
+The demo uses a practical writing standard. A normal case, lab, or project entry targets 300 to 600 words, three to six decision rows, three learning prompts, and no more than two evidence items. The goal is a useful memory aid that can support an interview answer without becoming a second assignment.
+
 Participants should replace demo claims with work they completed personally. They should preserve the same standard of reasoning:
 
 1. State the scope and starting condition.
@@ -41,3 +43,5 @@ The portfolio may describe what a participant observed and diagnosed during a st
 ## Instructor use
 
 Instructors can keep all eight demos for the first orientation, then ask participants to replace them gradually. A participant's first reviewed entry can replace one featured demo row in the root README, interview index, and skills matrix. This gives the portfolio a useful shape from the beginning while keeping personal claims accurate.
+
+Five strong participant entries are enough for a finished featured set. Additional entries should add a distinct skill, project, or troubleshooting lesson.

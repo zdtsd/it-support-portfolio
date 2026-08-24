@@ -11,6 +11,6 @@ These are illustrative demos. Replace them with personal work after review.
 
 ## Add a lab
 
-Copy [the lab-report template](../templates/LAB-REPORT.md) into a descriptive folder. Document the starting condition, procedure, expected and observed results, verification, technical explanation, personal contribution, and sanitized evidence.
+Copy [the lab-report template](../templates/LAB-REPORT.md) into a descriptive folder. Keep the report to the decisions that mattered, the observed and verified result, what the result proves, your contribution, and three learning prompts.
 
 For team labs, identify your own configuration, testing, observation, or documentation work separately from the team's combined result.

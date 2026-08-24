@@ -32,17 +32,17 @@ Read the full [Sanitization Guide](SANITIZATION-GUIDE.md) before adding evidence
 
 ## How much detail is useful
 
-A useful full entry normally answers these questions:
+A practical full entry normally answers these questions:
 
 1. What function was failing or being built?
-2. What was the scope and training context?
-3. What did I observe directly?
-4. What did I suspect, and why?
-5. Which test separated the likely explanations?
-6. How did the evidence change my next decision?
-7. What did I personally change or create?
-8. How did I verify the result?
-9. What would I do differently next time?
+2. What was my role and scope?
+3. Which checks or decisions mattered, and why?
+4. What did I find or produce?
+5. How did I verify the result?
+6. What evidence changed my direction?
+7. What would I do sooner next time?
+
+Aim for 300 to 600 words and three to six decision rows. Most drafts should take 15 to 25 minutes. Evidence is optional when the written decision record already supports the learning.
 
 Remove details that don't help a reviewer understand those answers. A command belongs in an entry when its output affected the diagnosis. Typing it alone doesn't make it useful evidence.
 
@@ -82,7 +82,7 @@ Don't describe the instructor's hidden method for creating a fault. Your portfol
 
 ## Choose featured work
 
-Your main README and [Interview Evidence Index](../INTERVIEW-INDEX.md) should eventually feature approximately five to eight strong entries. Together, they should show a reasonable range of:
+Your main README and [Interview Evidence Index](../INTERVIEW-INDEX.md) should eventually feature five strong entries. Together, they should show a useful range of:
 
 - end-user support;
 - hardware;

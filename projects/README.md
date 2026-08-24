@@ -10,4 +10,4 @@ This is an illustrative demo. Replace it with personal work after review.
 
 ## Add a project
 
-Copy [the project-summary template](../templates/PROJECT-SUMMARY.md). Keep the scope honest, distinguish individual and team contributions, and link to sanitized deliverables when they are safe to publish.
+Copy [the project-summary template](../templates/PROJECT-SUMMARY.md). Keep the scope accurate, record only the decisions that shaped the result, distinguish individual and team contributions, and link to no more than two strong sanitized deliverables in a normal entry.
