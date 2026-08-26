@@ -101,6 +101,20 @@ If local policy permits temporary raw evidence, keep it outside the repository o
 
 Only a reviewed, cropped, redacted derivative belongs in an entry's `evidence/` directory.
 
+## XP Cyber submission reports
+
+An XP Cyber Challenge Submission Report contains participant-owned completion evidence and report verification features. A participant may add their own report after an instructor reviews the intended visibility.
+
+- Confirm that the report belongs to the participant publishing it.
+- Review the participant name, result, duration, QR code, report UID, submission ID, and challenge details before choosing a public or private repository. Use separately approved access-controlled storage when narrower visibility is required.
+- Keep the official report intact when its QR and identifiers are needed for verification.
+- Describe the report as completion evidence and the KSA identifiers as report-supplied mappings.
+- Write the accompanying reflection in the participant's own words.
+- Exclude range screenshots, credentials, supplied files, environment-specific commands and paths, and reproducible solution steps.
+- Never use another participant's report as substitute evidence.
+
+The [XP Cyber Digital Duplicates demo](../labs/xp-cyber-digital-duplicates-postmortem/README.md) shows the intended separation between generated evidence and participant reflection.
+
 ## Pre-commit review
 
 Before every commit:

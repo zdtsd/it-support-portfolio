@@ -2,7 +2,7 @@
 
 ## Why the demo is populated
 
-A blank template can make the expected level of work difficult to judge. This starter includes eight completed examples so participants can see how a worklog row, full entry, evidence guide, skills link, and interview prompt connect.
+A blank template can make the expected level of work difficult to judge. This starter includes nine completed examples so participants can see how a worklog row, full entry, evidence guide, skills link, and interview prompt connect.
 
 ## Training material basis
 
@@ -15,6 +15,8 @@ The demo topics were selected from learner-facing CompTIA A+ training material u
 - Windows security review;
 - printer troubleshooting and maintenance; and
 - managed-switch practice.
+
+The XP Cyber post-mortem demo is based on the evidence fields, result, and workforce mappings visible in a publicly shared [Digital Duplicates Challenge Submission Report](https://github.com/wel51x/NICE-Challenges/blob/main/Digital%20Duplicates/5.%20Digital%20Duplicates.pdf). The reflection is original illustrative content. It does not represent the report owner's words or disclose a reproducible completion path.
 
 The repository rewrites those topics as original portfolio examples. It doesn't copy source handouts, answer keys, raw submissions, internal course paths, or complete walkthroughs.
 
@@ -36,12 +38,12 @@ Participants should replace demo claims with work they completed personally. The
 
 ## Evidence policy
 
-The evidence directories contain guidance only. They don't include invented screenshots, terminal captures, tickets, or assessment results. Participants may add real evidence after cropping, permanent redaction, technical review, and privacy review.
+Most evidence directories contain guidance only. They don't include invented screenshots, terminal captures, tickets, or assessment results. The XP Cyber demo links to a public reference report in its owner's repository and does not copy that report into this starter. Participants may add evidence they own after technical, privacy, and visibility review.
 
 The portfolio may describe what a participant observed and diagnosed during a staged exercise. It must exclude the method used to deploy, administer, or reset the condition.
 
 ## Instructor use
 
-Instructors can keep all eight demos for the first orientation, then ask participants to replace them gradually. A participant's first reviewed entry can replace one featured demo row in the root README, interview index, and skills matrix. This gives the portfolio a useful shape from the beginning while keeping personal claims accurate.
+Instructors can keep all nine demos for the first orientation, then ask participants to replace them gradually. A participant's first reviewed entry can replace one featured demo row in the root README, interview index, and skills matrix. This gives the portfolio a useful shape from the beginning while keeping personal claims accurate.
 
 Five strong participant entries are enough for a finished featured set. Additional entries should add a distinct skill, project, or troubleshooting lesson.

@@ -16,6 +16,7 @@ The dates and results in this section are fictional sample data. They show how a
 | 2026-02-16 | Demo: System startup diagnosis | Case study | Hardware, power, cooling | Found a disconnected CPU fan lead and verified two stable starts | [Full entry](cases/system-startup-diagnosis/README.md) |
 | 2026-02-24 | Demo: Windows security baseline | Project | Windows, security, change control | Completed an approved update restart and rechecked five visible security controls | [Full entry](projects/windows-security-review/README.md) |
 | 2026-03-02 | Demo: Printer troubleshooting guide | KB article | Printers, documentation, escalation | Wrote a symptom-based guide with safety, verification, recovery, and escalation steps | [Full entry](knowledge-base/printer-troubleshooting-guide/README.md) |
+| 2026-03-09 | Demo: XP Cyber Digital Duplicates post-mortem | Post-mortem | Digital forensics, evidence integrity, KSA mapping | Connected a verifiable full-pass submission report with a preservation-focused reflection | [Full entry](labs/xp-cyber-digital-duplicates-postmortem/README.md) |
 
 ## Add your next row
 

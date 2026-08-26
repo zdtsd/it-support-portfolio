@@ -23,6 +23,7 @@ Choose the template that matches the activity:
 - Multi-step project: [Project Summary](templates/PROJECT-SUMMARY.md)
 - Reusable procedure: [Knowledge-Base Article](templates/KNOWLEDGE-BASE-ARTICLE.md)
 - Script you authored or materially improved: [Script README](templates/SCRIPT-README.md)
+- XP Cyber submission report and reflection: [XP Cyber Post-Mortem](templates/XP-CYBER-POST-MORTEM.md)
 
 Copy the template into the matching folder. Use a short descriptive folder name such as `cases/network-printer-offline`, not `case1` or a real ticket number.
 

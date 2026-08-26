@@ -48,7 +48,7 @@ I am an emerging IT support professional developing practical skills in troubles
 
 ## Featured demo evidence
 
-These eight entries provide a broad instructor demo. They don't claim participant experience. A personalized portfolio can finish with five strong reviewed entries.
+These nine entries provide a broad instructor demo. They don't claim participant experience. A personalized portfolio can finish with five strong reviewed entries.
 
 | Featured entry | Experience type | Technical areas | One-sentence proof |
 |---|---|---|---|
@@ -57,6 +57,7 @@ These eight entries provide a broad instructor demo. They don't claim participan
 | [Switch MAC-learning lab](examples/switch-mac-learning/README.md) | Illustrative lab | Managed switching, Ethernet | Moved a workstation connection and verified that the switch relearned the source MAC on the new port |
 | [Command-line troubleshooting decisions](labs/command-line-troubleshooting/README.md) | Illustrative exercise | Windows, command line, networking | Selected commands by the question each output could answer and documented their limits |
 | [DHCP DORA process analysis](labs/dhcp-dora-analysis/README.md) | Illustrative lab | IPv4, DHCP, protocol analysis | Explained the state change created by every message in the lease sequence |
+| [XP Cyber Digital Duplicates post-mortem](labs/xp-cyber-digital-duplicates-postmortem/README.md) | Illustrative post-mortem | Digital forensics, evidence integrity, KSA mapping | Paired a verifiable submission report with a preservation-focused learning reflection |
 | [System startup diagnosis](cases/system-startup-diagnosis/README.md) | Illustrative case study | Hardware, power, cooling | Used the shutdown pattern and fan behavior to find a disconnected CPU fan lead and verify stable startup |
 | [Windows security baseline review](projects/windows-security-review/README.md) | Illustrative project | Windows, security, change control | Reviewed five controls, prioritized an approved update restart, and rechecked the baseline |
 | [Printer troubleshooting guide](knowledge-base/printer-troubleshooting-guide/README.md) | Illustrative KB article | Printers, documentation, escalation | Connected five common printer symptoms with safe tests, corrections, and verification |
@@ -72,6 +73,7 @@ Use the [Interview Evidence Index](INTERVIEW-INDEX.md) to find these examples by
 - Network printers, queues, ports, and print quality
 - Ethernet switching and source-MAC learning
 - Security baselines, safe changes, and escalation
+- Digital forensics, evidence preservation, and cryptographic integrity checks
 - Command-line troubleshooting and verification
 - Knowledge-base writing and technical communication
 - Projects, collaboration, and reflective improvement

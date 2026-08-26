@@ -9,6 +9,7 @@ This matrix maps skills to evidence. It doesn't assign ratings. The populated li
 | Networking | [Browser connectivity](examples/browser-connectivity/README.md) and [DHCP DORA analysis](labs/dhcp-dora-analysis/README.md) | Layered troubleshooting plus an explanation of automatic IPv4 lease state |
 | Printers and peripherals | [Network printer case](examples/network-printer-port/README.md) and [printer guide](knowledge-base/printer-troubleshooting-guide/README.md) | Configuration comparison, verified output, maintenance awareness, and reusable troubleshooting documentation |
 | Security | [Windows security baseline](projects/windows-security-review/README.md) | Risk classification, least change, managed-policy boundaries, and verification |
+| Digital forensics | [XP Cyber Digital Duplicates post-mortem](labs/xp-cyber-digital-duplicates-postmortem/README.md) | Evidence preservation, forensic-imaging concepts, integrity verification, report interpretation, and KSA mapping |
 | Command line | [Command-line decisions](labs/command-line-troubleshooting/README.md) | Command selection, safe file operations, scope of evidence, and tool limitations |
 | Documentation | [Printer troubleshooting guide](knowledge-base/printer-troubleshooting-guide/README.md) | Defined audience, usable steps, verification, recovery, and escalation guidance |
 | Customer service | [Network printer case](examples/network-printer-port/README.md) | Respectful closing communication, impact awareness, and clear verification |
