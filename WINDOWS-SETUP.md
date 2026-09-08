@@ -25,7 +25,7 @@ GitHub calls the profile connection [following](https://docs.github.com/en/get-s
 
 ## 2. Get the starter files
 
-1. Open [ITC3's main branch](https://github.com/NFARThom/ITC3/tree/main). Check that the branch selector says **main**.
+1. Open the [ITC3 starter repository](https://github.com/NFARThom/ITC3). Keep the default branch selected to get the current starter.
 2. Select **Code → Download ZIP**. This gives you the current files for your own new portfolio. See [GitHub's download instructions](https://docs.github.com/en/repositories/working-with-files/using-files/downloading-source-code-archives) if needed. If you can't access ITC3, ask your instructor for the starter ZIP.
 3. Right-click the downloaded ZIP in File Explorer and choose **Extract All**. Open the extracted folders until you can see `README.md`, `WRITEUP-TEMPLATE.md`, and `write-ups` together.
 4. Rename the folder containing those files to `it-support-portfolio`.
