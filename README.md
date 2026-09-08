@@ -18,5 +18,3 @@ Short write-ups from support tickets and XP Cyber challenges, showing CompTIA co
 Pick a ticket or XP Cyber challenge you worked on and spend about **5–10 minutes** writing **100–200 words**. Explain the problem, your reasoning, and the outcome. Each example also has an expandable note connecting the work to workforce frameworks.
 
 [Start here](START-HERE.md) · [Copy the write-up template](WRITEUP-TEMPLATE.md)
-
-The [previous portfolio](archive/README.md) is kept for reference.

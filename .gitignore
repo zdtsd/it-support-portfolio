@@ -46,6 +46,7 @@ raw-exports/
 *.db
 
 # Archives may contain unreviewed exports or evidence
+/archive/
 *.zip
 *.7z
 *.rar
