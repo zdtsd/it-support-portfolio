@@ -2,6 +2,8 @@
 
 Pick work you can explain in your own words. Read [the printer example](write-ups/printer-offline.md) or [the XP Cyber example](write-ups/xp-cyber-customer-support.md) to see how much detail is enough. Aim for **100–200 words in about 5–10 minutes**; the word count is a guide.
 
+**Working on your Windows computer?** Follow [Set up your portfolio on Windows](WINDOWS-SETUP.md) to create your own local Git repository, connect it to GitHub, and upload your work. The steps below are for editing directly on GitHub.
+
 ## Write your first entry
 
 1. Open your own portfolio repository on GitHub. Your instructor can help you set one up.
