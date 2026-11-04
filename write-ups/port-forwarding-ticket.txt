@@ -1,0 +1,15 @@
+Unexpected port forwarding
+
+Problem: A device on a remote network is unexpectedly offering its services to WAN connections on port 8080.
+
+Initial plan: This is almost certainly due to an issue with port forwarding, so the firewall is the natural place to begin investigating. If port forwarding is configured properly, there is likely a larger firewall misconfiguration allowing traffic through.
+
+Solution:
+- Use a VPN to connect to the remote network
+- Connect to the network's firewall via web interface (HTTPS)
+- Disable the port forwarding NAT rule that exposed port 8080 to the internet.
+- Verify the fix by attempting to connect to the service on port 8080 remotely.
+
+Skills:
+| K0911 | Knowledge of remote access tools and techniques | Used a VPN to access the remote network.
+| K0983 | Knowledge of computer networking principles and practices | Identified the problem as a port forwarding issue and resolved it as such.

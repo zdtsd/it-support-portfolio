@@ -1,0 +1,16 @@
+Commissioning a switch
+
+Problem: A switch with an undocumented configuration requires documentation and testing of functionality, as well as configuration and commission for usage in a lab network.
+
+Steps taken:
+- Consult the knowledge base to learn about the details of working with the particular switch model
+- Use the password recovery system to regain administrative access without changing the configuration
+- Document the relevant parts of the current configuration, as well as generate console logs showing all configuration details
+- Backup the configuration, both locally to the switch and on the Linux desktop used to connect to it
+- Configure the switch as described in the ticket (SSH accounts, VLAN access, IP and domain name), making sure to replace the outlying configuration on port 24
+- Use a cable tester to verify PoE output and connectivity, as well as using a workstation to verify that the negotiated data rate was as expected for each port
+- Create a document detailing all work done and approving the switch for use in a network lab.
+
+Skills:
+| K0983 | Knowledge of computer networking principles and practices | Properly configured a switch to serve as a networking device.
+| K0674 | Knowledge of computer networking protocols | Configured the proper networking protocols on the switch to allow for remote access and spanning tree.
